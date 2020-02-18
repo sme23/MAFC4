@@ -1,0 +1,9 @@
+#define FIXED_DAMAGE_WEAPONS
+
+#include "FixedDamageWeapons.lyn.event"
+
+FixedDamageWeaponList:
+BYTE IronBow
+BYTE 0
+
+#endif // FIXED_DAMAGE_WEAPONS
