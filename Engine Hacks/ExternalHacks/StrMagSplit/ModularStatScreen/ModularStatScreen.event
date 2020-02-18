@@ -157,15 +157,7 @@
   
 	ALIGN 4
 	MSS_page1:
-	#ifdef LEADERSHIP_STARS
-		#incbin "asm/mss_page1_skills_leadership.dmp"
-	#else
-	#ifdef USE_FATIGUE
-		#incbin "asm/mss_page1_skills_fatigue.dmp"
-	#endif // USE_FATIGUE
-	#else
 		#incbin "asm/mss_page1_skills.dmp"
-	#endif
 	POIN SkillIcons
 	POIN Skill_Getter
 	POIN SkillTester
@@ -176,14 +168,7 @@
 	WORD Growth_Options
 	POIN Growth_Getter_Table
 	POIN Get_Palette_Index
-	#ifdef LEADERSHIP_STARS
-		POIN GetLeadershipStarCount
-	#endif
 	POIN MagClassTable
-	#ifdef USE_FATIGUE 
-	WORD SS_FatigueText
-	POIN MSSFatigueGetter
-	#endif // USE_FATIGUE
 	
   
   ALIGN 4
