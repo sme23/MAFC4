@@ -148,17 +148,8 @@
 
   }
 
+  ALIGN 4
   // public functions
-  
-  #ifdef DRAGON_VEIN_SKILL_REQUIRED
-  VeinUsability:
-    #incbin "asm/DragonVeinUsability.dmp"
-    WORD DragonVeinTrapID
-    POIN SkillTester
-    WORD DragonsBloodID
-  #endif
-  
-  #ifdef USE_HOLY_BLOOD
   VeinUsability:
 	#incbin "asm/DragonVeinUsabilityHolyBlood.dmp"
 	WORD DragonVeinTrapID
@@ -166,17 +157,8 @@
     WORD DragonsBloodID
 	POIN HolyBloodTable
 	POIN HolyBloodCharacterTable
-	#define DRAGON_VEIN_SKILL_REQUIRED
-  #endif
 
-  #ifndef DRAGON_VEIN_SKILL_REQUIRED
-  VeinUsability:
-    #incbin "asm/DragonVeinUsabilityNoSkill.dmp"
-    WORD DragonVeinTrapID
-    POIN SkillTester
-    WORD DragonsBloodID
-  #endif
-
+  ALIGN 4
   VeinEffect:
     #incbin "asm/DragonVeinExecution.dmp"
     POIN DragonVeinEffectTableOffset
