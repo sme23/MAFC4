@@ -182,11 +182,14 @@
   #ifdef ENABLE_PERSONAL_INFO
   
 	ALIGN 4
-	MESSAGE page 4 at currentOffset
 	MSS_page4:
       #incbin "asm/mss_page4_runa.dmp"
-	  MESSAGE page 4 ends at currentOffset
 	  POIN PersonalDataTable
+	  WORD SS_BloodText
+	  POIN HolyBloodNameGetter|1
+	  WORD SS_BiorhythmText
+	  POIN BiorhythmNameGetter|1
+	  POIN HolyBloodVoracityGetter|1
 	  
 	ALIGN 4
     PageNumberCheck:
@@ -194,11 +197,11 @@
 	  POIN PersonalDataTable
 	  
   #endif // ENABLE_PERSONAL_INFO
-
+MESSAGE MSS_page4
   ALIGN 4
   NewPageNameGraphic:
-    //#incext Png2Dmp "asm/pagenamegraphic.png" --lz77
-    #incbin "asm/pagenamegraphic.dmp"
+    #incext Png2Dmp "asm/pagenamegraphic.png" --lz77
+    //#incbin "asm/pagenamegraphic.dmp"
 
   ALIGN 4
   NewPageNameLayout:
@@ -423,10 +426,19 @@ ALIGN 4
     RMenu(ST_Likes,ST_Age,ST_Name4,ST_Height,0x66,0x38,DislikesDesc)
 	
   ST_Age:
-    RMenu(ST_Dislikes,0,ST_Class4,ST_Height,0x66,0x58,AgeDesc)
+    RMenu(ST_Dislikes,ST_Blood,ST_Class4,ST_Height,0x66,0x58,AgeDesc)
 	
   ST_Height:
-    RMenu(ST_Dislikes,0,ST_Age,0,0xa6,0x58,HeightDesc)
+    RMenu(ST_Dislikes,ST_Blood,ST_Age,0,0xa6,0x58,HeightDesc)
+	
+  ST_Blood:
+    RMenu(ST_Age,ST_Bio,ST_Class4,0,0x86,0x68,0x0,HolyBloodDescGetter)
+  
+  ST_Bio:
+    RMenu(ST_Blood,ST_Donate,ST_Exp4,0,0x86,0x78,SS_BiorhythmRText)
+	
+  ST_Donate:
+    RMenu(ST_Bio,0,ST_HP4,0,0x7E,0x88,DonateURL)
 	
 #endif // ENABLE_PERSONAL_INFO
 
@@ -441,6 +453,12 @@ ALIGN 4
 RemoveGlowy:
 //#incext Png2Dmp "RemoveGlowy.png" --lz77
 #incbin "RemoveGlowy.dmp"
+
+DonateToCirclesText:
+String("Donate to Circles")
+BYTE 0
+setText(0xd4b, DonateToCirclesText)
+
 
 // POP
 #else // _FE8_

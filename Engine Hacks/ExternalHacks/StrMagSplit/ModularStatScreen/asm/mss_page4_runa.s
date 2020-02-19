@@ -1,6 +1,12 @@
 .thumb
 .include "mss_defs.s"
 
+.equ SS_BloodText,PersonalInfoTable+4
+.set HolyBloodNameGetter, SS_BloodText+4
+.set SS_BiorhythmText, HolyBloodNameGetter+4
+.set BiorhythmNameGetter, SS_BiorhythmText+4
+.set HolyBloodVoracityGetter, BiorhythmNameGetter+4
+
 page_start
 
 draw_textID_at 13, 3, textID=0xd4c, width=16, colour=Blue
@@ -172,6 +178,34 @@ ldr    r1, =(tile_origin+(0x20*2*11)+(2*25))
 mov    r3, #0
 blh    DrawText, r4
 add    r7, #8
+
+ldr r0, SS_BloodText
+draw_textID_at 17, 13 @Blood label text
+
+@pass in textid in r0
+ldr r0, HolyBloodNameGetter
+mov r14,r0
+.short 0xF800
+draw_textID_at 21, 13, colour=White, width=16
+
+ldr r0, HolyBloodVoracityGetter
+mov r14,r0
+.short 0xF800
+cmp r0,#0
+beq NoIconDraw
+draw_icon_at 19, 13, number=0xCB
+NoIconDraw:
+
+ldr r0, SS_BiorhythmText
+draw_textID_at 17, 15 @Blood label text
+
+@pass in textid in r0
+ldr r0, BiorhythmNameGetter
+mov r14,r0
+.short 0xF800
+draw_textID_at 21, 15, colour=White, width=16
+
+draw_textID_at 16, 17, textID=0xd4b, width=16, colour=Green
 
 page_end
 

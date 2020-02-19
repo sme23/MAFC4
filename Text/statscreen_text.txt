@@ -83,3 +83,5 @@ This character's current age.[X]
 ## HeightDesc
 This character's height.[X]
 
+## SS_BloodText
+Blood[X]
