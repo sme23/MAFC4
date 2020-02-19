@@ -19,6 +19,9 @@ Learned  [X]
 
 #include "unitmenu_text.txt"
 
+#0xd4b DonateToCirclesText
+ Donate to Circles[X]
+
 #0xd4c LikesText
 #first text ID in the free block
 Likes:[X]

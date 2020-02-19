@@ -432,13 +432,13 @@ ALIGN 4
     RMenu(ST_Dislikes,ST_Blood,ST_Age,0,0xa6,0x58,HeightDesc)
 	
   ST_Blood:
-    RMenu(ST_Age,ST_Bio,ST_Class4,0,0x86,0x68,0x0,HolyBloodDescGetter)
+    RMenu(ST_Age,ST_Bio,ST_Class4,0,0x86,0x6E,0x0,HolyBloodDescGetter)
   
   ST_Bio:
-    RMenu(ST_Blood,ST_Donate,ST_Exp4,0,0x86,0x78,SS_BiorhythmRText)
+    RMenu(ST_Blood,0,ST_Exp4,0,0x86,0x7E,SS_BiorhythmRText)
 	
-  ST_Donate:
-    RMenu(ST_Bio,0,ST_HP4,0,0x7E,0x88,DonateURL)
+  //ST_Donate:
+  //  RMenu(ST_Bio,0,ST_HP4,0,0x7E,0x88,DonateURL)
 	
 #endif // ENABLE_PERSONAL_INFO
 
@@ -453,11 +453,6 @@ ALIGN 4
 RemoveGlowy:
 //#incext Png2Dmp "RemoveGlowy.png" --lz77
 #incbin "RemoveGlowy.dmp"
-
-DonateToCirclesText:
-String("Donate to Circles")
-BYTE 0
-setText(0xd4b, DonateToCirclesText)
 
 
 // POP

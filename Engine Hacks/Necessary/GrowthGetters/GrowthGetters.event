@@ -47,4 +47,6 @@
 	POIN SkillTester
 	WORD BlossomID
 	WORD AptitudeID
+	POIN HolyBloodTable
+	POIN HolyBloodCharacterTable
 	

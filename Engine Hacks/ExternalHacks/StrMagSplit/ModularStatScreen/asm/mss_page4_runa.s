@@ -180,32 +180,32 @@ blh    DrawText, r4
 add    r7, #8
 
 ldr r0, SS_BloodText
-draw_textID_at 17, 13 @Blood label text
+draw_textID_at 17, 14 @Blood label text
 
 @pass in textid in r0
 ldr r0, HolyBloodNameGetter
 mov r14,r0
 .short 0xF800
-draw_textID_at 21, 13, colour=White, width=16
+draw_textID_at 21, 14, colour=White, width=16
 
 ldr r0, HolyBloodVoracityGetter
 mov r14,r0
 .short 0xF800
 cmp r0,#0
 beq NoIconDraw
-draw_icon_at 19, 13, number=0xCB
+draw_icon_at 15, 14, number=0xCB
 NoIconDraw:
 
 ldr r0, SS_BiorhythmText
-draw_textID_at 17, 15 @Blood label text
+draw_textID_at 17, 16 @Blood label text
 
 @pass in textid in r0
 ldr r0, BiorhythmNameGetter
 mov r14,r0
 .short 0xF800
-draw_textID_at 21, 15, colour=White, width=16
+draw_textID_at 21, 16, colour=White, width=16
 
-draw_textID_at 16, 17, textID=0xd4b, width=16, colour=Green
+@draw_textID_at 16, 18, textID=0xd4b, width=16, colour=Green
 
 page_end
 
