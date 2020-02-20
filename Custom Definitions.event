@@ -27,6 +27,16 @@
 
 // #define __DEBUG__ // Uncomment to get the Debug startup menu :p
 
+#define EdelgardLord EphraimLord
+#define Falcoknight FalcoKnight
+#define Aymr Garm
+#define Mystletainn Audhulma
+#define FujinYumi Nidhogg
+#define Imhullu Gleipnir
+#define Ereshkigal Naglfar
+#define SleepSword PoisonSword
+#define Dragonspear 0x8d
+
 //Holy Blood
 #define SeirosBlood 1
 #define CethleannBlood 2

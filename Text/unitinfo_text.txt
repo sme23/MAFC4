@@ -1,17 +1,379 @@
-## EirikaLike1ID
-pi[0xF1]a coladas[X]
+## EdelgardName
+Edelgard[X]
 
-## EirikaLike2ID
-[_g][_e]tti[_n][_g] [_c][_a][_u][_g][_h]t i[_n] t[_h][_e] [_r][_a]i[_n][X]
+## LinhardtName
+Linhardt[X]
 
-## EirikaDislike1ID
-health food[X]
+## EirikaName
+Eirika[X]
 
-## EirikaDislike2ID
-yoga[X]
+## LArachelName
+L'Arachel[X]
 
-## EirikaAgeID
-42069[X]
+## TanaName
+Tana[X]
 
-## EirikaHeightID
-776cm[X]
+## DozlaName
+Dozla[X]
+
+## AresName
+Ares[X]
+
+## LeneName
+Lene[X]
+
+## PallaName
+Palla[X]
+
+## CatriaName
+Catria[X]
+
+## YuriName
+Yuri[X]
+
+## GharnefName
+Gharnef[X]
+
+## NergalName
+Nergal[X]
+
+## RievName
+Riev[X]
+
+## TakumiName
+Takumi[X]
+
+
+## EdelgardDesc
+Princess and heir apparent[N]
+of the Adrestian Empire.[X]
+
+## LinhardtDesc
+Heir to House Hevring.[N]
+He's often tired and bored.[X]
+
+## EirikaDesc
+The princess of the kingdom of Renais.[N]
+She's elegant and kind.[X]
+
+## LArachelDesc
+A young woman from Rausten.[N]
+She fights for justice and order.[X]
+
+## TanaDesc
+A young lady of Frelia.[N]
+She is both cheery and sociable.[X]
+
+## DozlaDesc
+A berserker from Rausten.[N]
+He's a hearty man with a thirst for life.[X]
+
+## AresDesc
+A young man from Agustria.[N]
+He's dark and brooding.[X]
+
+## LeneDesc
+A woman from Darna.[N]
+She's headstrong and caring.[X]
+
+## PallaDesc
+A pegasus knight from Archanea.[N]
+The eldest of three sisters.[X]
+
+## CatriaDesc
+A pegasus knight from Archanea.[N]
+The middle of three sisters.[X]
+
+## YuriDesc
+[X]
+
+## GharnefDesc
+A dark sorcerer with designs[N]
+to conquer the world.[X]
+
+## NergalDesc
+An avaricious fiend who[N]
+turns death into power.[X]
+
+## RievDesc
+A heretic and general in Grado's army.[N]
+He's also known as Blood Beryl.[X]
+
+## TakumiDesc
+A contrary Hoshidan prince.[N]
+Seeks attention.[X]
+
+## EdelgardLike1
+[X]
+
+## LinhardtLike1
+[X]
+
+## EirikaLike1
+[X]
+
+## LArachelLike1
+[X]
+
+## TanaLike1
+[X]
+
+## DozlaLike1
+[X]
+
+## AresLike1
+[X]
+
+## LeneLike1
+[X]
+
+## PallaLike1
+[X]
+
+## CatriaLike1
+[X]
+
+## YuriLike1
+[X]
+
+## GharnefLike1
+[X]
+
+## NergalLike1
+[X]
+
+## RievLike1
+[X]
+
+## TakumiLike1
+[X]
+
+
+## EdelgardLike2
+[X]
+
+## LinhardtLike2
+[X]
+
+## EirikaLike2
+[X]
+
+## LArachelLike2
+[X]
+
+## TanaLike2
+[X]
+
+## DozlaLike2
+[X]
+
+## AresLike2
+[X]
+
+## LeneLike2
+[X]
+
+## PallaLike2
+[X]
+
+## CatriaLike2
+[X]
+
+## YuriLike2
+[X]
+
+## GharnefLike2
+[X]
+
+## NergalLike2
+[X]
+
+## RievLike2
+[X]
+
+## TakumiLike2
+[X]
+
+
+## EdelgardDislike1
+[X]
+
+## LinhardtDislike1
+[X]
+
+## EirikaDislike1
+[X]
+
+## LArachelDislike1
+[X]
+
+## TanaDislike1
+[X]
+
+## DozlaDislike1
+[X]
+
+## AresDislike1
+[X]
+
+## LeneDislike1
+[X]
+
+## PallaDislike1
+[X]
+
+## CatriaDislike1
+[X]
+
+## YuriDislike1
+[X]
+
+## GharnefDislike1
+[X]
+
+## NergalDislike1
+[X]
+
+## RievDislike1
+[X]
+
+## TakumiDislike1
+[X]
+
+
+## EdelgardDislike2
+[X]
+
+## LinhardtDislike2
+[X]
+
+## EirikaDislike2
+[X]
+
+## LArachelDislike2
+[X]
+
+## TanaDislike2
+[X]
+
+## DozlaDislike2
+[X]
+
+## AresDislike2
+[X]
+
+## LeneDislike2
+[X]
+
+## PallaDislike2
+[X]
+
+## CatriaDislike2
+[X]
+
+## YuriDislike2
+[X]
+
+## GharnefDislike2
+[X]
+
+## NergalDislike2
+[X]
+
+## RievDislike2
+[X]
+
+## TakumiDislike2
+[X]
+
+
+## EdelgardAge
+[X]
+
+## LinhardtAge
+[X]
+
+## EirikaAge
+[X]
+
+## LArachelAge
+[X]
+
+## TanaAge
+[X]
+
+## DozlaAge
+[X]
+
+## AresAge
+[X]
+
+## LeneAge
+[X]
+
+## PallaAge
+[X]
+
+## CatriaAge
+[X]
+
+## YuriAge
+[X]
+
+## GharnefAge
+???[X]
+
+## NergalAge
+[X]
+
+## RievAge
+???[X]
+
+## TakumiAge
+[X]
+
+
+## EdelgardHeight
+[X]
+
+## LinhardtHeight
+[X]
+
+## EirikaHeight
+[X]
+
+## LArachelHeight
+[X]
+
+## TanaHeight
+[X]
+
+## DozlaHeight
+[X]
+
+## AresHeight
+[X]
+
+## LeneHeight
+[X]
+
+## PallaHeight
+[X]
+
+## CatriaHeight
+[X]
+
+## YuriHeight
+[X]
+
+## GharnefHeight
+[X]
+
+## NergalHeight
+[X]
+
+## RievHeight
+[X]
+
+## TakumiHeight
+[X]

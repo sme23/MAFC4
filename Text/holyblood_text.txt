@@ -24,7 +24,7 @@ Latona[X]
 
 ## BloodDescLatona
 Latona Blood. Grants[N]
-usage of Latona.[X]
+usage of Ivaldi.[X]
 
 ## BloodNameFrelia
 Frelia[X]

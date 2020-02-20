@@ -132,6 +132,15 @@
 #define ARank 0xB5
 #define SRank 0xFB
 
+//Affinities
+#define AffLight 6
+#define AffDark 5
+#define AffAnima 7
+#define AffFire 1
+#define AffWind 3
+#define AffIce 4
+#define AffThunder 2
+
 #define negateByte(byte) "0x100-byte"
 #define IsPointer 0x8000000
 
@@ -163,3 +172,4 @@
 #endif
 
 #include "External Tables.event"
+
