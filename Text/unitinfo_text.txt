@@ -11,7 +11,7 @@ health food[X]
 yoga[X]
 
 ## EirikaAgeID
-Yes[X]
+42069[X]
 
 ## EirikaHeightID
 776cm[X]

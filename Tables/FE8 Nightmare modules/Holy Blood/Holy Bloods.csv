@@ -1,4 +1,4 @@
-INLINE HolyBloodTable,Name ID,Desc ID,HP Growth Modifier,Strength Growth Modifier,Skill Growth Modifier,Speed Growth Modifier,Defense Growth Modifier,Resistance Growth Modifier,Luck Growth Modifier,Magic Growth Modifier,Blood IDI,Can Dragon Vein,##UNKNOWN##,Exclusive Weapons List Pointer
+INLINE HolyBloodTable,Name ID,Desc ID,HP Growth Modifier,Strength Growth Modifier,Skill Growth Modifier,Speed Growth Modifier,Defense Growth Modifier,Resistance Growth Modifier,Luck Growth Modifier,Magic Growth Modifier,Blood ID,Can Dragon Vein,##UNKNOWN##,Exclusive Weapons List Pointer
 Donate Blood,nameCamus,nameSirius,5,10,15,20,25,30,35,40,0,1,0xffff,0
 0x1,nameCamus,nameSirius,255,255,255,255,255,255,255,255,1,255,0xffff,0xffffffff
 0x2,nameCamus,nameSirius,255,255,255,255,255,255,255,255,2,255,0xffff,0xffffffff
