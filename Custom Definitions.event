@@ -65,19 +65,19 @@
 #define Takumi 15
 
 //Mugs
-#define EdelgardMug Edelgard
-#define LinhardtMug Linhardt
-#define EirikaMug Eirika
-#define LArachelMug LArachel
-#define TanaMug Tana
-#define DozlaMug Dozla
-#define AresMug Ares
-#define LeneMug Lene
-#define PallaMug Palla
-#define CatriaMug Catria
-#define YuriMug Yuri
-#define GharnefMug Gharnef
-#define NergalMug Nergal
-#define RievMug Riev
-#define TakumiMug Takumi
+#define EdelgardMug 2
+#define LinhardtMug 3
+#define EirikaMug 4
+#define LArachelMug 5
+#define TanaMug 6
+#define DozlaMug 7
+#define AresMug 8
+#define LeneMug 9
+#define PallaMug 10
+#define CatriaMug 11
+#define YuriMug 12
+#define GharnefMug 13
+#define NergalMug 14
+#define RievMug 15
+#define TakumiMug 16
 
