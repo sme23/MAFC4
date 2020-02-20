@@ -165,3 +165,11 @@ WORD CantoPlusID
 
 #include "ClassTypeSkills/ClassTypeSkills.event"
 
+#include "Competitive/Competitive.lyn.event"
+CompetitiveIDLink:
+BYTE CompetitiveID
+
+#include "HonorableSpirit/HonorableSpirit.lyn.event"
+HonorableSpiritIDLink:
+BYTE HonorableSpiritID
+

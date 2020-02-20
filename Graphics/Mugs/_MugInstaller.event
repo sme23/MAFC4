@@ -1,0 +1,61 @@
+ALIGN 16
+EdelgardPortrait:
+#incext PortraitFormatter "Edelgard.png"
+
+LinhardtPortrait:
+#incext PortraitFormatter "Linhardt.png"
+
+EirikaPortrait:
+#incext PortraitFormatter "Eirika.png"
+
+LArachelPortrait:
+#incext PortraitFormatter "LArachel.png"
+
+TanaPortrait:
+#incext PortraitFormatter "Tana.png"
+
+DozlaPortrait:
+#incext PortraitFormatter "Dozla.png"
+
+AresPortrait:
+#incext PortraitFormatter "Ares.png"
+
+LenePortrait:
+#incext PortraitFormatter "Lene.png"
+
+PallaPortrait:
+#incext PortraitFormatter "Palla.png"
+
+CatriaPortrait:
+#incext PortraitFormatter "Catria.png"
+
+YuriPortrait:
+#incext PortraitFormatter "Yuri.png"
+
+GharnefPortrait:
+#incext PortraitFormatter "Gharnef.png"
+
+NergalPortrait:
+#incext PortraitFormatter "Nergal.png"
+
+RievPortrait:
+#incext PortraitFormatter "Riev.png"
+
+TakumiPortrait:
+#incext PortraitFormatter "Takumi.png"
+
+setMugEntry(EdelgardMug, EdelgardPortrait, 2, 2, 0, 0)
+setMugEntry(LinhardtMug, LinhardtPortrait, 2, 2, 0, 0)
+setMugEntry(EirikaMug, EirikaPortrait, 2, 2, 0, 0)
+setMugEntry(LArachelMug, LArachelPortrait, 2, 2, 0, 0)
+setMugEntry(TanaMug, TanaPortrait, 2, 2, 0, 0)
+setMugEntry(DozlaMug, DozlaPortrait, 2, 2, 0, 0)
+setMugEntry(AresMug, AresPortrait, 2, 2, 0, 0)
+setMugEntry(LeneMug, LenePortrait, 2, 2, 0, 0)
+setMugEntry(PallaMug, PallaPortrait, 2, 2, 0, 0)
+setMugEntry(CatriaMug, CatriaPortrait, 2, 2, 0, 0)
+setMugEntry(YuriMug, YuriPortrait, 2, 2, 0, 0)
+setMugEntry(GharnefMug, GharnefPortrait, 2, 2, 0, 0)
+setMugEntry(NergalMug, NergalPortrait, 2, 2, 0, 0)
+setMugEntry(RievMug, RievPortrait, 2, 2, 0, 0)
+setMugEntry(TakumiMug, TakumiPortrait, 2, 2, 0, 0)

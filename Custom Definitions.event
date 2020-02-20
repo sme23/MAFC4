@@ -26,3 +26,58 @@
 #include "Engine Hacks/SkillSystem/skill_definitions.event"
 
 // #define __DEBUG__ // Uncomment to get the Debug startup menu :p
+
+//Holy Blood
+#define SeirosBlood 1
+#define CethleannBlood 2
+#define RenaisBlood 3
+#define LatonaBlood 4
+#define FreliaBlood 5
+#define HezulBlood 6
+#define BragiBlood 7
+#define AubinBlood 8
+#define MedeusBlood 9
+#define DragonBlood 10
+#define NinisBlood 11
+#define NoBlood 0xFF
+#define IsMajor 0x80
+
+//Characters
+#define Edelgard 1
+#define Linhardt 2
+#undef Eirika
+#define Eirika 3
+#undef LArachel
+#define LArachel 4
+#undef Tana
+#define Tana 5
+#undef Dozla
+#define Dozla 6
+#define Ares 7
+#define Lene 8
+#define Palla 9
+#define Catria 10
+#define Yuri 11
+#define Gharnef 12
+#define Nergal 13
+#undef Riev
+#define Riev 14
+#define Takumi 15
+
+//Mugs
+#define EdelgardMug Edelgard
+#define LinhardtMug Linhardt
+#define EirikaMug Eirika
+#define LArachelMug LArachel
+#define TanaMug Tana
+#define DozlaMug Dozla
+#define AresMug Ares
+#define LeneMug Lene
+#define PallaMug Palla
+#define CatriaMug Catria
+#define YuriMug Yuri
+#define GharnefMug Gharnef
+#define NergalMug Nergal
+#define RievMug Riev
+#define TakumiMug Takumi
+

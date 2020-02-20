@@ -159,11 +159,15 @@
 
 //Paragon: Experience gain is doubled.
 //Author Unknown (Initial Commit)
-#define ParagonID 65
+#define ParagonID 255
 
 //Void Curse: This unit gives no experience when defeated.
 //By Sme
-#define VoidCurseID 240
+#define VoidCurseID 65
+
+//Imperial Lineage: Multiplies experience gain by x1.2.
+//By Sme
+#define ImperialLineageID 240
 
 //Growth Skills
 
@@ -196,7 +200,7 @@
 
 //Bond: All allies within 3 tiles recover 10% HP each turn.
 //Author Unknown (Initial Commit)
-#define BondID 93
+#define BondID 255
 
 //Forager: Recover 20% HP each turn if on a Plain, Forest or Mountain.
 //By Leonarth
@@ -205,6 +209,11 @@
 //Imbue: Recover HP equal to Magic at the start of each turn.
 //By Sme
 #define ImbueID 255
+
+//Catnap: Restore 10% of max HP at the start of each turn.
+//By Sme
+#define CatnapID 93
+
 
 //Movement Skills
 
@@ -530,7 +539,7 @@
 
 //Wind Disciple: +10 Hit and Avoid when HP is not at max.
 //Author Unknown (Initial Commit)
-#define WindDiscipleID 111
+#define WindDiscipleID 255
 
 //Wrath: If HP < 50%, +20 critical rate.
 //Author Unknown (Initial Commit)
@@ -538,7 +547,7 @@
 
 //Quick Draw: +4 Damage when initiating battle.
 //Author Unknown (Initial Commit)
-#define QuickDrawID 110
+#define QuickDrawID 255
 
 // Arcane Blade: When initiating battle at 1 range: Add 3+(Mag/2) to Hit and Crit.
 //By Zeta
@@ -559,6 +568,14 @@
 //Thotslayer: +15 crit against units with Nice Thighs or Personality.
 //By Sme
 #define ThotslayerID 255
+
+//Competitive: If allies are within 3 tiles, Crit+10, Atk+3, and Def+1.
+//By Sme
+#define CompetitiveID 110
+
+//Honorable Spirit: Atk+3 when not adjecent to an ally and at 1-range.
+//By Sme
+#define HonorableSpiritID 111
 
 
 //Proc Skills

@@ -1,7 +1,3 @@
-//defs for testing
-#define IsMajor 0x80
-#define DonateBlood 0
-
 //specialized getters for MSS
 
 ALIGN 4

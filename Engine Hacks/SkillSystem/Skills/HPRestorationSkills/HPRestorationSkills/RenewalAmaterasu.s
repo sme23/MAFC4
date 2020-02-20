@@ -210,6 +210,7 @@ ldr	r0, =SkillTester
 mov	lr,r0
 mov	r0,r5
 ldr	r1, =RenewalImbueIDLink
+ldrb r1,[r1]
 .short 0xf800
 cmp	r0,#0x0
 beq	NoImbue
@@ -222,6 +223,21 @@ add r4,r0
 
 
 NoImbue:
+
+ldr r0,=SkillTester
+mov lr,r0
+mov r0,r5
+ldr r1, =RenewalCatnapIDLink
+ldrb r1,[r1]
+.short 0xF800
+cmp r0,#0
+beq NoCatnap
+
+@restore 10% of max HP
+mov r0,#10
+add r4,r0
+
+NoCatnap:
 
 mov r0, r4 @return the amount healed.
 pop {r4 - r6}

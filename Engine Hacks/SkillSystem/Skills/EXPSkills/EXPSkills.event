@@ -15,3 +15,5 @@ VoidCurse:
 #incbin "VoidCurse/VoidCurse.dmp"
 POIN SkillTester
 WORD VoidCurseID
+
+#include "ImperialLineage/ImperialLineage.lyn.event"

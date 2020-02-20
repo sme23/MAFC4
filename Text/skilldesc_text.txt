@@ -1231,3 +1231,19 @@ Vengeance: Add half of damage[N]
 taken to damage dealt.[N]
 (Skill % activation)[X]
 
+## SD_ImperialLineage
+Imperial Lineage: Multiplies[N]
+experience gain by x1.2.[X]
+
+## SD_Catnap
+Catnap: Restore 10% of max HP[N]
+at the start of each turn.[X]
+
+## SD_Competitive
+Competitive: If allies are within 3[N]
+tiles, Crit+10, Atk+3, and Def+1.[X]
+
+## SD_HonorableSpirit
+Honorable Spirit: Atk+3 when not[N]
+adjecent to an ally and at 1-range.[X]
+
