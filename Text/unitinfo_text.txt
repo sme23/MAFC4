@@ -85,7 +85,8 @@ A pegasus knight from Archanea.[N]
 The middle of three sisters.[X]
 
 ## YuriDesc
-[X]
+Lord of the Underground.[N]
+Strong-willed and sarcastic.[X]
 
 ## GharnefDesc
 A dark sorcerer with designs[N]
@@ -104,10 +105,10 @@ A contrary Hoshidan prince.[N]
 Seeks attention.[X]
 
 ## EdelgardLike1
-[X]
+talent[X]
 
 ## LinhardtLike1
-[X]
+sleeping in[X]
 
 ## EirikaLike1
 [X]
@@ -134,7 +135,7 @@ Seeks attention.[X]
 [X]
 
 ## YuriLike1
-[X]
+sweets[X]
 
 ## GharnefLike1
 [X]
@@ -150,10 +151,10 @@ Seeks attention.[X]
 
 
 ## EdelgardLike2
-[X]
+nature[X]
 
 ## LinhardtLike2
-[X]
+reading[X]
 
 ## EirikaLike2
 [X]
@@ -180,7 +181,7 @@ Seeks attention.[X]
 [X]
 
 ## YuriLike2
-[X]
+family[X]
 
 ## GharnefLike2
 [X]
@@ -196,10 +197,10 @@ Seeks attention.[X]
 
 
 ## EdelgardDislike1
-[X]
+outdated values[X]
 
 ## LinhardtDislike1
-[X]
+fighting[X]
 
 ## EirikaDislike1
 [X]
@@ -226,7 +227,7 @@ Seeks attention.[X]
 [X]
 
 ## YuriDislike1
-[X]
+injustice[X]
 
 ## GharnefDislike1
 [X]
@@ -242,10 +243,10 @@ Seeks attention.[X]
 
 
 ## EdelgardDislike2
-[X]
+Crests[X]
 
 ## LinhardtDislike2
-[X]
+ghosts[X]
 
 ## EirikaDislike2
 [X]
@@ -272,7 +273,7 @@ Seeks attention.[X]
 [X]
 
 ## YuriDislike2
-[X]
+irrationality[X]
 
 ## GharnefDislike2
 [X]
@@ -288,10 +289,10 @@ Seeks attention.[X]
 
 
 ## EdelgardAge
-[X]
+18[X]
 
 ## LinhardtAge
-[X]
+16[X]
 
 ## EirikaAge
 [X]
@@ -318,7 +319,7 @@ Seeks attention.[X]
 [X]
 
 ## YuriAge
-[X]
+20[X]
 
 ## GharnefAge
 ???[X]
@@ -334,10 +335,10 @@ Seeks attention.[X]
 
 
 ## EdelgardHeight
-[X]
+158cm[X]
 
 ## LinhardtHeight
-[X]
+177cm[X]
 
 ## EirikaHeight
 [X]
@@ -364,7 +365,7 @@ Seeks attention.[X]
 [X]
 
 ## YuriHeight
-[X]
+171cm[X]
 
 ## GharnefHeight
 [X]
