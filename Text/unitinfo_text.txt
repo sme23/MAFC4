@@ -105,49 +105,49 @@ A contrary Hoshidan prince.[N]
 Seeks attention.[X]
 
 ## EdelgardLike1
-talent[X]
+talented individuals[X]
 
 ## LinhardtLike1
 sleeping in[X]
 
 ## EirikaLike1
-[X]
+peace[X]
 
 ## LArachelLike1
-[X]
+justice[X]
 
 ## TanaLike1
-[X]
+Ephraim[X]
 
 ## DozlaLike1
-[X]
+fighting[X]
 
 ## AresLike1
-[X]
+power[X]
 
 ## LeneLike1
-[X]
+dancing[X]
 
 ## PallaLike1
-[X]
+Abel[X]
 
 ## CatriaLike1
-[X]
+Marth[X]
 
 ## YuriLike1
 sweets[X]
 
 ## GharnefLike1
-[X]
+???[X]
 
 ## NergalLike1
-[X]
+???[X]
 
 ## RievLike1
-[X]
+???[X]
 
 ## TakumiLike1
-[X]
+???[X]
 
 
 ## EdelgardLike2
@@ -157,43 +157,43 @@ nature[X]
 reading[X]
 
 ## EirikaLike2
-[X]
+Ephraim[X]
 
 ## LArachelLike2
-[X]
+helping others[X]
 
 ## TanaLike2
-[X]
+Innes[X]
 
 ## DozlaLike2
-[X]
+drinking[X]
 
 ## AresLike2
-[X]
+strength[X]
 
 ## LeneLike2
-[X]
+Corpul[X]
 
 ## PallaLike2
-[X]
+family[X]
 
 ## CatriaLike2
-[X]
+family[X]
 
 ## YuriLike2
 family[X]
 
 ## GharnefLike2
-[X]
+???[X]
 
 ## NergalLike2
-[X]
+???[X]
 
 ## RievLike2
-[X]
+???[X]
 
 ## TakumiLike2
-[X]
+???[X]
 
 
 ## EdelgardDislike1
@@ -203,43 +203,43 @@ outdated values[X]
 fighting[X]
 
 ## EirikaDislike1
-[X]
+violence[X]
 
 ## LArachelDislike1
-[X]
+monsters[X]
 
 ## TanaDislike1
-[X]
+violence[X]
 
 ## DozlaDislike1
-[X]
+thinking[X]
 
 ## AresDislike1
-[X]
+weakness[X]
 
 ## LeneDislike1
-[X]
+fighting[X]
 
 ## PallaDislike1
-[X]
+self-deprecation[X]
 
 ## CatriaDislike1
-[X]
+weakness[X]
 
 ## YuriDislike1
 injustice[X]
 
 ## GharnefDislike1
-[X]
+???[X]
 
 ## NergalDislike1
-[X]
+???[X]
 
 ## RievDislike1
-[X]
+???[X]
 
 ## TakumiDislike1
-[X]
+???[X]
 
 
 ## EdelgardDislike2
@@ -249,43 +249,43 @@ Crests[X]
 ghosts[X]
 
 ## EirikaDislike2
-[X]
+Valter[X]
 
 ## LArachelDislike2
-[X]
+impoliteness[X]
 
 ## TanaDislike2
-[X]
+Gheb[X]
 
 ## DozlaDislike2
-[X]
+politeness[X]
 
 ## AresDislike2
-[X]
+Sigurd[X]
 
 ## LeneDislike2
-[X]
+creeps[X]
 
 ## PallaDislike2
-[X]
+carelessness[X]
 
 ## CatriaDislike2
-[X]
+quackery[X]
 
 ## YuriDislike2
 irrationality[X]
 
 ## GharnefDislike2
-[X]
+???[X]
 
 ## NergalDislike2
-[X]
+???[X]
 
 ## RievDislike2
-[X]
+???[X]
 
 ## TakumiDislike2
-[X]
+???[X]
 
 
 ## EdelgardAge
@@ -295,28 +295,28 @@ irrationality[X]
 16[X]
 
 ## EirikaAge
-[X]
+17[X]
 
 ## LArachelAge
-[X]
+18[X]
 
 ## TanaAge
-[X]
+16[X]
 
 ## DozlaAge
-[X]
+47[X]
 
 ## AresAge
-[X]
+20[X]
 
 ## LeneAge
-[X]
+17[X]
 
 ## PallaAge
-[X]
+23[X]
 
 ## CatriaAge
-[X]
+20[X]
 
 ## YuriAge
 20[X]
@@ -325,13 +325,13 @@ irrationality[X]
 ???[X]
 
 ## NergalAge
-[X]
+???[X]
 
 ## RievAge
 ???[X]
 
 ## TakumiAge
-[X]
+???[X]
 
 
 ## EdelgardHeight
@@ -341,40 +341,40 @@ irrationality[X]
 177cm[X]
 
 ## EirikaHeight
-[X]
+167cm[X]
 
 ## LArachelHeight
-[X]
+165cm[X]
 
 ## TanaHeight
-[X]
+162cm[X]
 
 ## DozlaHeight
-[X]
+164cm[X]
 
 ## AresHeight
-[X]
+186cm[X]
 
 ## LeneHeight
-[X]
+159cm[X]
 
 ## PallaHeight
-[X]
+167cm[X]
 
 ## CatriaHeight
-[X]
+169cm[X]
 
 ## YuriHeight
 171cm[X]
 
 ## GharnefHeight
-[X]
+???[X]
 
 ## NergalHeight
-[X]
+???[X]
 
 ## RievHeight
-[X]
+???[X]
 
 ## TakumiHeight
-[X]
+???[X]
