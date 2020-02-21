@@ -35,17 +35,17 @@ POIN BiorhythmTextTable
 
 ALIGN 4
 BiorhythmTextTable:
-WORD SS_BiorhythmWorst
-WORD SS_BiorhythmBad
-WORD SS_BiorhythmPoor
-WORD SS_BiorhythmNeutral
-WORD SS_BiorhythmGood
-WORD SS_BiorhythmGreat
-WORD SS_BiorhythmBest
-WORD SS_BiorhythmGreat
-WORD SS_BiorhythmGood
-WORD SS_BiorhythmNeutral
-WORD SS_BiorhythmPoor
-WORD SS_BiorhythmBad
+WORD SS_BiorhythmWorst		//0 - Worst, ascending
+WORD SS_BiorhythmBad		//1 - Bad, ascending
+WORD SS_BiorhythmPoor		//2 - Poor, ascending
+WORD SS_BiorhythmNeutral	//3 - Neutral, ascending
+WORD SS_BiorhythmGood		//4 - Good, ascending
+WORD SS_BiorhythmGreat		//5 - Great, ascending
+WORD SS_BiorhythmBest		//6 - Best, descending
+WORD SS_BiorhythmGreat		//7 - Great, descending
+WORD SS_BiorhythmGood		//8 - Good, descending
+WORD SS_BiorhythmNeutral	//9 - Neutral, descending
+WORD SS_BiorhythmPoor		//10 - Poor, descending
+WORD SS_BiorhythmBad		//11 - Bad, descending
 
 #endif //BIORHYTHM

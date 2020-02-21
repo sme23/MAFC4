@@ -31,8 +31,8 @@ mov r14,r1
 .short 0xF800
 cmp r0,#0 @has no blood
 beq RetFalse
-cmp r1,#0 @has minor blood
-beq RetFalse
+@cmp r1,#0 @has minor blood
+@beq RetFalse
 ldrb r0,[r0,#0xC] @has major blood
 mov r3,r0 @r3=holy blood ID
 

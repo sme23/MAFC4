@@ -96,3 +96,6 @@ Mov[X]
 #include "unitinfo_text.txt"
 
 #include "holyblood_text.txt"
+
+#include "item_text.txt"
+

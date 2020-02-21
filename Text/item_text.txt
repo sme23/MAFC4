@@ -1,0 +1,35 @@
+## SleepSwordName
+Sleep Sword[X]
+
+## SleepSwordDesc
+Inflicts sleep upon hit.[X]
+
+## ImhulluName
+Imhullu[X]
+
+## ImhulluDesc
+Evil dark magic.[X]
+
+## EreshkigalName
+Ereshkigal[X]
+
+## EreshkigalDesc
+[.][X]
+
+## MystletainnName
+Mystletainn[X]
+
+## MystletainnDesc
+Skill +5.[X]
+
+## AymrName
+Aymr[X]
+
+## AymrDesc
+A Crest Stone weapon.[X]
+
+## FujinYumiName
+Fujin Yumi[X]
+
+## FujinYumiDesc
+Negates terrain costs.[X]
