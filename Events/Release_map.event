@@ -1,19 +1,11 @@
+#include "REDAHelper.event"
 
-////////////////////////////////////////////////////
-//                                                //
-// Disassembled with Nintenlord's Event Assembler //
-// Version: 11.0.0.0                              //
-// Game: FE8                                      //
-// File: FE8_clean.gba                            //
-// Offset: $9EC66C                                //
-//                                                //
-////////////////////////////////////////////////////
-
-EventPointerTable(0x7, PointerList)
+EventPointerTable(7, Ch0PointerList)
 
 VeinEffect(0, FreezeAllEnemies)
+VeinEffect(1, CreateCliff)
 
-PointerList:
+Ch0PointerList:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
 POIN LocationBasedEvents
@@ -29,15 +21,9 @@ TurnBasedEvents:
 END_MAIN
 
 CharacterBasedEvents:
-CharacterEventBothWays(0x10,TalkEvent, Eirika, Ephraim)
 END_MAIN
 
 LocationBasedEvents:
-Vendor(ShopItems,2,7)
-Armory(ArmoryItems,10,26)
-Village(0x8,VillageEvent,18,27)
-House(0,HouseEvent,6,24)
-Seize(10,2)
 END_MAIN
 
 MiscBasedEvents:
@@ -57,81 +43,26 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Edelgard  EdelgardLord 0x1 Level(10,Ally,0)   [9,24] 0b 0x0 0x0 0x0 [Aymr,Elixir] NoAI
-UNIT Linhardt  Mage 0x1 Level(11,Ally,0)  [7,24] 0b 0x0 0x0 0x0 [Elfire,GuidingRing] NoAI
-UNIT Eirika  EirikaLord 0x1 Level(12,Ally,0)     [11,24] 0b 0x0 0x0 0x0 [Rapier,Vulnerary] NoAI
-UNIT LArachel  Troubadour 0x1 Level(15,Ally,0)  [8,25] 0b 0x0 0x0 0x0 [Mend,KnightCrest] NoAI
-UNIT Tana  PegasusKnight 0x1 Level(15,Ally,0)    [10,25] 0b 0x0 0x0 0x0 [HeavySpear] NoAI
-UNIT Dozla  Berserker 0x1 Level(1,Ally,0) [12,25] 0b 0x0 0x0 0x0 [BattleAxe,Elixir] NoAI
-UNIT Ares  Cavalier 0x1 Level(10,Ally,0) [11,26] 0b 0x0 0x0 0x0 [Mystletainn] NoAI
-UNIT Lene  Dancer 0x1 Level(12,Ally,0)    [7,26] 0b 0x0 0x0 0x0 [SleepSword,NinissGrace] NoAI
-UNIT Palla  WyvernKnight 0x1 Level(3,Ally,0)   [9,26] 0b 0x0 0x0 0x0 [Dragonspear] NoAI
-UNIT Catria  Falcoknight 0x1 Level(1,Ally,0)     [10,27] 0b 0x0 0x0 0x0 [KillerLance] NoAI
-UNIT Yuri  Rogue 0x1 Level(2,Ally,0)  [12,27] 0b 0x0 0x0 0x0 [IronSword] NoAI
-UNIT Gharnef  Druid 0x1 Level(5,Ally,0)   [13,26] 0b 0x0 0x0 0x0 [Imhullu] NoAI
-UNIT Nergal  Druid 0x1 Level(5,Ally,0)    [6,27] 0b 0x0 0x0 0x0 [Ereshkigal] NoAI
-UNIT Riev  Bishop 0x1 Level(5,Ally,0) [14,27] 0b 0x0 0x0 0x0 [Ivaldi] NoAI
-UNIT Takumi  Sniper 0x1 Level(5,Ally,0)  [14,25] 0b 0x0 0x0 0x0 [FujinYumi] NoAI
-UNIT Forde 0x5 0x1 0xA1     [6,25] 0b 0x0 0x0 0x0 [0x14,0x65,0x88,0x0] NoAI
-UNIT Kyle 0x5 0x1 0xA1      [5,26] 0b 0x0 0x0 0x0 [0x14,0x65,0x88,0x0] NoAI
-UNIT
-
-Units2:
-UNIT Amelia Cavalier_F 0x1 0xA1   [11,26] 0b 0x0 0x0 0x0 [0x14,0x65,0x88,0x0] NoAI
-UNIT Artur Monk 0x1 0xA1    [12,26] 0b 0x0 0x0 0x0 [0x3F,0x68,0x88,0x0] NoAI
-UNIT Gerik Hero 0x1 0xA1     [13,26] 0b 0x0 0x0 0x0 [0x1,0x64,0x88,0x0] NoAI
-UNIT Tethys 0x4D 0x1 0xA1   [14,26] 0b 0x0 0x0 0x0 NoAI NoAI
-UNIT Marisa Swordmaster_F 0x1 0xA1   [15,27] 0b 0x0 0x0 0x0 [0x1,0,0,0x0] NoAI
-UNIT Saleh 0x27 0x1 0xA1    [14,27] 0b 0x0 0x0 0x0 [0x38,0x0,0x0,0x0] NoAI
-UNIT Ewan Mage 0x1 0xA1     [13,27] 0b 0x0 0x0 0x0 [0x38,0x68,0x88,0x0] NoAI
-UNIT Rennac 0x33 0x1 0xA1   [10,27] 0b 0x0 0x0 0x0 [0x1,0x0,0x0,0x0] NoAI
-UNIT Duessel 0x35 0x1 0xA1  [9,27] 0b 0x0 0x0 0x0 [0x1,0x0,0x0,0x0] NoAI
-UNIT Myrrh 0x3C 0x1 0xA1    [7,27] 0b 0x0 0x0 0x0 [0xAA,0x0,0x0,0x0] NoAI
-UNIT Knoll 0x2D 0x1 0xA1    [6,27] 0b 0x0 0x0 0x0 [0x45,0x68,0x88,0x0] NoAI
-UNIT Joshua 0x13 0x1 0xA1   [9,28] 0b 0x0 0x0 0x0 [0x1,0x64,0x88,0x0] NoAI
-UNIT Syrene 0x49 0x1 0xA1   [13,28] 0b 0x0 0x0 0x0 [0x14,0x0,0x0,0x0] NoAI
-// UNIT Orson_Ch5x 0x7 0x1 0xA1 [9,5] 0b 0x0 0x0 0x0 [0x14,0x0,0x0,0x0] NoAI
-UNIT
-
-MoreUnits:
-UNIT CaellachCC 0x11 0x1 0xA1 [18,28] 0b 0x0 0x0 0x0 [0x21,0x29,0x7C,0x0] NoAI
-UNIT GlenCC 0x21 0x1 0xA1     [17,29] 0b 0x0 0x0 0x0 [0x17,0x4,0x75,0x0] NoAI
-UNIT OrsonCC 0x07 0x1 0xA1    [19,29] 0b 0x0 0x0 0x0 [0x11,0x17,0x76,0x0] NoAI
-UNIT ValterCC 0x23 0x1 0xA1   [16,30] 0b 0x0 0x0 0x0 [0x17,0x1D,0x71,0x0] NoAI
-UNIT RievCC 0x2B 0x1 0xA1     [18,30] 0b 0x0 0x0 0x0 [0x43,0x42,0x75,0x0] NoAI
-UNIT HaydenCC 0x1D 0x1 0xA1   [15,31] 0b 0x0 0x0 0x0 [0x4,0x2F,0x74,0x0] NoAI
-UNIT FadoCC 0x0B 0x1 0xA1     [17,31] 0b 0x0 0x0 0x0 [0x4,0x17,0x21,0x88] NoAI
-UNIT IsmaireCC 0x16 0x1 0xA1  [19,31] 0b 0x0 0x0 0x0 [0xC,0xA1,0x88,0x0] NoAI
-UNIT SelenaCC 0x2A 0x1 0xA1   [16,28] 0b 0x0 0x0 0x0 [0x3B,0x3A,0x4D,0x0] NoAI
-UNIT LyonCC 0x4F 0x1 0xA1     [18,32] 0b 0x0 0x0 0x0 [0x8F,0x4E,0x57,0x0] NoAI
-UNIT
-
-EnemyUnits:
-UNIT Morva_Ch20 0x3B 0x40 0xA5    [15,2] 0b 0x0 0x0 0x0 [WretchedAir,0x0,0x0,0x0] AttackInRangeAI
-UNIT ONeill Fighter 0x40 0xA5     [8,19] 0b 0x0 0x0 0x0 [SteelAxe, HandAxe] AttackInRangeAI
-UNIT Breguet Knight 0x40 0xA5     [5,18] 0 0 0 0 [SteelLance, Javelin] AttackInRangeAI
-UNIT Bone Brigand 0x40 0xA5       [11,17] 0 0 0 0 [SteelAxe, HandAxe] AttackInRangeAI
-UNIT Bazba Brigand 0x40 0xA5      [16,18] 0 0 0 0 [SteelAxe, HandAxe] AttackInRangeAI
-UNIT Saar Knight 0x40 0xA5        [8,15] 0 0 0 0 [SteelLance, Javelin] AttackInRangeAI
-UNIT Novala Shaman 0x40 0xA5      [12,13] 0 0 0 0 [Nosferatu] AttackInRangeAI
-UNIT Murray Cavalier 0x40 0xA5    [3,13] 0 0 0 0 [SteelSword, Javelin] AttackInRangeAI
-UNIT Tirado General 0x40 0xA5     [16,9] 0 0 0 0 [SilverLance, Javelin] AttackInRangeAI
-UNIT Binks Warrior 0x40 0xA5      [1,10] 0 0 0 0 [SteelAxe, SteelBow] AttackInRangeAI
-UNIT Pablo Sage 0x40 0xA5         [5,11] 0 0 0 0 [Elfire, Purge] AttackInRangeAI
-UNIT
-
-EnemyUnits2:
-UNIT Vigarde General 0x40 0xA5    [10,2] 0 0 0 0 [Spear, SilverBlade, Tomahawk] NeverMoveAI
-UNIT Cyclops_boss Cyclops 0x40 0xA5       [9,4] 0 0 0 0 [BattleAxe, Tomahawk] AttackInRangeAI
-UNIT Cyclops_boss Cyclops 0x40 0xA5       [11,4] 0 0 0 0 [BattleAxe, Tomahawk] AttackInRangeAI
-UNIT Aias GreatKnight 0x40 0xA5   [7,11] 0 0 0 0 [ShortSpear, SilverBlade, SilverAxe] AttackInRangeAI
-UNIT Carlyle Swordmaster 0x40 0xA5 [10,9] 0 0 0 0 [WindSword] AttackInRangeAI
-UNIT Gheb Warrior 0x40 0xA5       [2,4] 0 0 0 0 [KillerAxe, KillerBow] NeverMoveAI
-UNIT Beran Ranger 0x40 0xA5       [17,14] 0 0 0 0 [Lancereaver, KillerBow, Longbow] AttackInRangeAI
+UNIT Edelgard  EdelgardLord 0x1 Level(10,Ally,0)   [28,0] 0b 0x0 1 REDA28R1 [Aymr,Elixir] NoAI
+UNIT Linhardt  Mage 0x1 Level(11,Ally,0)  [28,0] 0b 0x0 1 REDA27R0 [Elfire,GuidingRing] NoAI
+UNIT Eirika  EirikaLord 0x1 Level(12,Ally,0)     [24,12] 0b 0x0 1 REDA24R13 [Rapier,Vulnerary] NoAI
+UNIT LArachel  Troubadour 0x1 Level(15,Ally,0)  [24,12] 0b 0x0 1 REDA23R14 [Mend,KnightCrest] NoAI
+UNIT Tana  PegasusKnight 0x1 Level(15,Ally,0)    [24,12] 0b 0x0 1 REDA26R13 [HeavySpear] NoAI
+UNIT Dozla  Berserker 0x1 Level(1,Ally,0) [24,12] 0b 0x0 1 REDA24R14 [BattleAxe,Elixir] NoAI
+UNIT Ares  Cavalier 0x1 Level(10,Ally,0) [8,9] 0b 0x0 0x0 0x0 [Mystletainn] NoAI
+UNIT Lene  Dancer 0x1 Level(12,Ally,0)    [9,10] 0b 0x0 0x0 0x0 [SleepSword,NinissGrace] NoAI
+UNIT Palla  WyvernKnight 0x1 Level(3,Ally,0)   [19,16] 0b 0x0 0x0 0x0 [Dragonspear] NoAI
+UNIT Catria  Falcoknight 0x1 Level(1,Ally,0)     [20,16] 0b 0x0 0x0 0x0 [KillerLance] NoAI
+UNIT Yuri  Rogue 0x1 Level(2,Ally,0)  [3,0] 0b 0x0 0x0 0x0 [IronSword] NoAI
+UNIT Gharnef  Druid 0x1 Level(5,Ally,0)   [15,7] 0b 0x0 0x0 0x0 [Imhullu] NoAI
+UNIT Nergal  Druid 0x1 Level(5,Ally,0)    [1,5] 0b 0x0 0x0 0x0 [Ereshkigal] NoAI
+UNIT Riev  Bishop 0x1 Level(5,Ally,0) [9,4] 0b 0x0 0x0 0x0 [Ivaldi] NoAI
+UNIT Takumi  Sniper 0x1 Level(5,Ally,0)  [4,14] 0b 0x0 0x0 0x0 [FujinYumi] NoAI
 UNIT
 
 Traps1:
-Vein(9,23,0x0,DV1Desc) //freeze enemies
+//Vein(9,23,0x0,DV1Desc) //freeze enemies
+Vein(6,15,1,DV2Desc) //landslide
 ENDTRAP
 ALIGN 4
 
@@ -140,29 +71,10 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-ENUT 0x1 //no more boss quotes
-ENUT 0x2 //no more death quotes
-LOAD1 0x1 EnemyUnits
+LOAD1 0x0 Units1 
 ENUN
-LOAD1 0x1 EnemyUnits2
-ENUN
-LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
-ENUN
-LOAD1 0x0 Units2
-ENUN
-LOAD1 0x0 MoreUnits
-ENUN
-// FADI 10
-// MOVE 0 Carlyle [7,10]
-// ENUN
-//   StartBattle //scripted fight setup
-//   MissedAttack(0,0) //Seth misses
-//   NormalDamage(1,0) //Valter hits
-//   EndAttack
-// FIG1 Carlyle Aias 0
-// STAL 60
-// FADU 10
-GotoPrepScreen
+NoFade
+ENDA
 
 EndingScene:
 ASMC 0x85C71 0x381F5 0x37CF9 //show records screen
@@ -172,31 +84,7 @@ MNTS 0x1 //return to title screen
 NoFade
 ENDA
 
-VillageEvent:
-	VillageEventItem(VillageText, Village, Boots)
 
-HouseEvent:
-	// Set parameters
-	SVAL r1 NiceThighsID
-	SVAL r2 (-1) // (-1) is active unit
-	
-	// Check if unit has skill
-	// If they have, goto label #0 (end)
-	ASMC (ASMC_HasSkill+1)
-	BNE 0 rC r0
-	
-	// Learn skill to unit
-	ASMC (ASMC_LearnNewSkill+1)
-	
-LABEL 0
-	// end
-	
-	Text(HouseText)
-	
-	NoFade
-	ENDA
-	
-	// HouseEvent(HouseText, HouseBG)
 
 FreezeAllEnemies:
 VeinActivation
@@ -204,15 +92,9 @@ ASMC FreezeAllASMC|1
 NoFade
 ENDA
 
-TalkEvent:
-Text(0xc0a)
+CreateCliff:
+VeinActivation
+TILECHANGE 0
 NoFade
 ENDA
 
-ShopItems:
-SHLI Thunder Elfire Nosferatu Divine Mend Physic PureWater Elixir
-ALIGN 4
-
-ArmoryItems:
-SHLI SteelAxe SteelLance SteelBow SteelSword HandAxe Javelin
-ALIGN 4

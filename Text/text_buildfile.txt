@@ -46,6 +46,9 @@ Age:[X]
 Freeze all enemies[N]
 for one turn[X]
 
+## DV2Desc
+Trigger a landslide[X]
+
 ## nameCamus
 #for identity problems
 Camus[X]
