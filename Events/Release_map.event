@@ -4,6 +4,7 @@ EventPointerTable(7, Ch0PointerList)
 
 VeinEffect(0, FreezeAllEnemies)
 VeinEffect(1, CreateCliff)
+VeinEffect(2, CreateBridges)
 
 Ch0PointerList:
 POIN TurnBasedEvents
@@ -28,6 +29,7 @@ END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
+AREA 7 CliffInstigationEvent [15, 5] [22, 12] 
 END_MAIN
 
 Dunno1:
@@ -63,6 +65,7 @@ UNIT
 Traps1:
 //Vein(9,23,0x0,DV1Desc) //freeze enemies
 Vein(6,15,1,DV2Desc) //landslide
+Vein(14,2,2,DV3Desc) //bridges
 ENDTRAP
 ALIGN 4
 
@@ -93,8 +96,39 @@ NoFade
 ENDA
 
 CreateCliff:
+CAM1 [17,8]
 VeinActivation
 TILECHANGE 0
 NoFade
 ENDA
+
+CliffInstigationEvent:
+CHECK_ALLEGIANCE -1
+BNE 1 0 0xC
+
+CAM1 Takumi
+CUMO Takumi
+STAL 40
+CURE
+Text(PlaceholderText)
+MOVE 0 Takumi [6,15]
+ENUN
+STAL 10
+CALL CreateCliff
+Text(PlaceholderText)
+GOTO 2
+LABEL 1
+ENUF 7
+LABEL 2
+NoFade
+ENDA
+
+CreateBridges:
+CAM1 [10,5]
+VeinActivation
+TILECHANGE 1
+NoFade
+ENDA
+
+
 

@@ -49,6 +49,10 @@ for one turn[X]
 ## DV2Desc
 Trigger a landslide[X]
 
+## DV3Desc
+Clear a path through[N]
+the lake[X]
+
 ## nameCamus
 #for identity problems
 Camus[X]
@@ -93,6 +97,10 @@ by having this unit arrive.[X]
 
 ## Mov_Text_ID
 Mov[X]
+
+## PlaceholderText
+[OpenMidLeft][LoadEirika]
+This is placeholder text![A][X]
 
 #include "skilldesc_text.txt"
 
