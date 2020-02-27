@@ -3,7 +3,7 @@
  <tileset firstgid="1" name="01005B03" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
   <image source="../../tilesets/01005B03.png" width="512" height="512"/>
  </tileset>
- <layer id="20" name="Main" width="29" height="17" visible="0">
+ <layer id="20" name="Main" width="29" height="17">
   <properties>
    <property name="Anims1" value="5"/>
    <property name="Anims2" value="0"/>
@@ -63,7 +63,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="24" name="Bridges" width="29" height="17">
+ <layer id="24" name="Bridges" width="29" height="17" visible="0">
   <properties>
    <property name="Height" value="4"/>
    <property name="ID" value="1"/>

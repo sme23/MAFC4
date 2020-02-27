@@ -73,6 +73,10 @@
 #undef Riev
 #define Riev 14
 #define Takumi 15
+#define Dolhr 0x80
+#define Morph 0x81
+#define Remnant 0x82
+#define Monster 0x83
 
 //Mugs
 #define EdelgardMug 2

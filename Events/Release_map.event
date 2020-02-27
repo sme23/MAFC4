@@ -19,12 +19,14 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(8,TurnBasedEdelSpawn,0,255)
 END_MAIN
 
 CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
+Arrive(4,14)
 END_MAIN
 
 MiscBasedEvents:
@@ -45,22 +47,46 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Edelgard  EdelgardLord 0x1 Level(10,Ally,0)   [28,0] 0b 0x0 1 REDA28R1 [Aymr,Elixir] NoAI
-UNIT Linhardt  Mage 0x1 Level(11,Ally,0)  [28,0] 0b 0x0 1 REDA27R0 [Elfire,GuidingRing] NoAI
 UNIT Eirika  EirikaLord 0x1 Level(12,Ally,0)     [24,12] 0b 0x0 1 REDA24R13 [Rapier,Vulnerary] NoAI
 UNIT LArachel  Troubadour 0x1 Level(15,Ally,0)  [24,12] 0b 0x0 1 REDA23R14 [Mend,KnightCrest] NoAI
 UNIT Tana  PegasusKnight 0x1 Level(15,Ally,0)    [24,12] 0b 0x0 1 REDA26R13 [HeavySpear] NoAI
 UNIT Dozla  Berserker 0x1 Level(1,Ally,0) [24,12] 0b 0x0 1 REDA24R14 [BattleAxe,Elixir] NoAI
+UNIT
+
+Units2:
+UNIT Edelgard  EdelgardLord 0x1 Level(10,Ally,0)   [28,0] 0b 0x0 1 REDA28R1 [Aymr,Elixir] NoAI
+UNIT Linhardt  Mage 0x1 Level(11,Ally,0)  [28,0] 0b 0x0 1 REDA27R0 [Elfire,GuidingRing] NoAI
+UNIT
+
+Units3:
 UNIT Ares  Cavalier 0x1 Level(10,Ally,0) [8,9] 0b 0x0 0x0 0x0 [Mystletainn] NoAI
 UNIT Lene  Dancer 0x1 Level(12,Ally,0)    [9,10] 0b 0x0 0x0 0x0 [SleepSword,NinissGrace] NoAI
+UNIT
+
+Units4:
 UNIT Palla  WyvernKnight 0x1 Level(3,Ally,0)   [19,16] 0b 0x0 0x0 0x0 [Dragonspear] NoAI
 UNIT Catria  Falcoknight 0x1 Level(1,Ally,0)     [20,16] 0b 0x0 0x0 0x0 [KillerLance] NoAI
-UNIT Yuri  Rogue 0x1 Level(2,Ally,0)  [3,0] 0b 0x0 0x0 0x0 [IronSword] NoAI
-UNIT Gharnef  Druid 0x1 Level(5,Ally,0)   [15,7] 0b 0x0 0x0 0x0 [Imhullu] NoAI
-UNIT Nergal  Druid 0x1 Level(5,Ally,0)    [1,5] 0b 0x0 0x0 0x0 [Ereshkigal] NoAI
-UNIT Riev  Bishop 0x1 Level(5,Ally,0) [9,4] 0b 0x0 0x0 0x0 [Ivaldi] NoAI
-UNIT Takumi  Sniper 0x1 Level(5,Ally,0)  [4,14] 0b 0x0 0x0 0x0 [FujinYumi] NoAI
 UNIT
+
+Units5:
+UNIT Yuri  Rogue 0x1 Level(2,Ally,0)  [3,0] 0b 0x0 0x0 0x0 [IronSword] NoAI
+UNIT
+
+EnemyBosses:
+UNIT Gharnef  Druid 0x1 Level(5,Enemy,0)   [15,7] 0b 0x0 0x0 0x0 [Imhullu] NeverMoveAI
+UNIT Nergal  Druid 0x1 Level(5,Enemy,0)    [1,5] 0b 0x0 0x0 0x0 [Ereshkigal] NeverMoveAI
+UNIT Riev  Bishop 0x1 Level(5,Enemy,0) [9,4] 0b 0x0 0x0 0x0 [Ivaldi] NeverMoveAI
+UNIT Takumi  Sniper 0x1 Level(5,Enemy,0)  [4,14] 0b 0x0 0x0 0x0 [FujinYumi] NeverMoveAI
+UNIT
+
+EnemyUnits1:
+UNIT Dolhr Fighter Gharnef Level(12,Enemy,1) [19,5] 0 0 1 REDA17R6 [SteelAxe] AttackInRangeAI
+UNIT Dolhr Cavalier_F Gharnef Level(12,Enemy,1) [19,5] 0 0 1 REDA15R8 [IronLance] AttackInRangeAI
+UNIT Dolhr Mage Gharnef Level(12,Enemy,1) [19,5] 0 0 1 REDA16R9 [Thunder] AttackInRangeAI
+UNIT Dolhr Shaman Gharnef Level(12,Enemy,1) [19,5] 2 0 1 REDA19R7 [Flux,Elixir] AttackInRangeAI
+UNIT Dolhr Knight Gharnef Level(12,Enemy,1) [19,5] 0 0 1 REDA14R7 [SteelLance] NeverMoveAI
+UNIT
+
 
 Traps1:
 //Vein(9,23,0x0,DV1Desc) //freeze enemies
@@ -76,6 +102,9 @@ ALIGN 4
 BeginningScene:
 LOAD1 0x0 Units1 
 ENUN
+LOAD1 0x0 EnemyBosses
+ENUN
+LOAD1 0x0 EnemyUnits1
 NoFade
 ENDA
 
@@ -130,5 +159,47 @@ TILECHANGE 1
 NoFade
 ENDA
 
+
+TurnBasedEdelSpawn:
+CHECK_EVENTID 7
+BEQ 1 0 0xC
+
+//check counter
+COUNTER_CHECK 0 
+SVAL 1 3
+BGE 2 0xC 1 
+
+//if less than 3 add 1
+COUNTER_INC 0 
+GOTO 1
+
+LABEL 2
+// spawn edelgard & linhardt w/ text
+CAM1 [28,0]
+LOAD1 0 Units2
+ENUN
+CUMO Edelgard
+STAL 40
+CURE
+Text(PlaceholderText)
+CAM1 Eirika
+CUMO Eirika
+STAL 40
+CURE
+Text(PlaceholderText)
+CAM1 Edelgard
+CUMO Edelgard
+STAL 40
+CURE
+Text(PlaceholderText)
+GOTO 3
+
+LABEL 1
+//unset flag 8
+ENUF 8
+
+LABEL 3
+NoFade
+ENDA
 
 
