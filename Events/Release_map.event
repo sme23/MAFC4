@@ -73,7 +73,7 @@ UNIT Yuri  Rogue 0x1 Level(2,Ally,0)  [3,0] 0b 0x0 0x0 0x0 [IronSword] NoAI
 UNIT
 
 EnemyBosses:
-UNIT Gharnef  Druid 0x1 Level(5,Enemy,0)   [15,7] 0b 0x0 0x0 0x0 [Imhullu] NeverMoveAI
+UNIT Gharnef  Druid 0x1 Level(5,Enemy,0)   [16,7] 0b 0x0 0x0 0x0 [Imhullu] NeverMoveAI
 UNIT Nergal  Druid 0x1 Level(5,Enemy,0)    [1,5] 0b 0x0 0x0 0x0 [Ereshkigal] NeverMoveAI
 UNIT Riev  Bishop 0x1 Level(5,Enemy,0) [9,4] 0b 0x0 0x0 0x0 [Ivaldi] NeverMoveAI
 UNIT Takumi  Sniper 0x1 Level(5,Enemy,0)  [4,14] 0b 0x0 0x0 0x0 [FujinYumi] NeverMoveAI
@@ -83,7 +83,7 @@ EnemyUnits1:
 UNIT Dolhr Fighter Gharnef Level(12,Enemy,1) [19,5] 0 0 1 REDA17R6 [SteelAxe] AttackInRangeAI
 UNIT Dolhr Cavalier_F Gharnef Level(12,Enemy,1) [19,5] 0 0 1 REDA15R8 [IronLance] AttackInRangeAI
 UNIT Dolhr Mage Gharnef Level(12,Enemy,1) [19,5] 0 0 1 REDA16R9 [Thunder] AttackInRangeAI
-UNIT Dolhr Shaman Gharnef Level(12,Enemy,1) [19,5] 2 0 1 REDA19R7 [Flux,Elixir] AttackInRangeAI
+UNIT Dolhr Shaman Gharnef Level(12,Enemy,1) [19,5] 2 0 1 REDA18R7 [Flux,Elixir] AttackInRangeAI
 UNIT Dolhr Knight Gharnef Level(12,Enemy,1) [19,5] 0 0 1 REDA14R7 [SteelLance] NeverMoveAI
 UNIT
 
@@ -166,10 +166,10 @@ BEQ 1 0 0xC
 
 //check counter
 COUNTER_CHECK 0 
-SVAL 1 3
+SVAL 1 2
 BGE 2 0xC 1 
 
-//if less than 3 add 1
+//if less than 2 add 1
 COUNTER_INC 0 
 GOTO 1
 
