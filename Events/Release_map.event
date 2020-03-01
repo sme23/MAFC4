@@ -87,6 +87,16 @@ UNIT Dolhr Shaman Gharnef Level(12,Enemy,1) [19,5] 2 0 1 REDA18R7 [Flux,Elixir] 
 UNIT Dolhr Knight Gharnef Level(12,Enemy,1) [19,5] 0 0 1 REDA14R7 [SteelLance] NeverMoveAI
 UNIT
 
+EnemyUnits2:
+UNIT Remnant Cavalier Riev Level(11,Enemy,1) [28,7] 0 0 1 REDA27R10 [IronLance] AttackInRangeAI
+UNIT Remnant Mage_F Riev Level(12,Enemy,1) [28,7] 0 0 1 REDA27R5 [Thunder] AttackInRangeAI
+UNIT Remnant Shaman Riev Level(11,Enemy,1) [28,7] 0 0 1 REDA23R1 [Flux] AttackInRangeAI
+UNIT Remnant Soldier Riev Level(12,Enemy,1) [28,7] 0 0 1 REDA15R2 [SlimLance] AttackInRangeAI
+UNIT Monster Revenant Riev Level(13,Enemy,1) [28,7] 0 0 1 REDA26R7 [RottenClaw] AttackInRangeAI
+UNIT Monster Bonewalker Riev Level(13,Enemy,1) [28,7] 0 0 1 REDA28R3 [SteelSword] AttackInRangeAI
+UNIT Monster Mogall Riev Level(13,Enemy,1) [28,7] 0 0 1 REDA26R2 [EvilEye] AttackInRangeAI
+UNIT Monster Bael Riev Level(13,Enemy,1) [28,7] 0 0 1 REDA19R0 [SharpClaw] AttackInRangeAI
+UNIT
 
 Traps1:
 //Vein(9,23,0x0,DV1Desc) //freeze enemies
@@ -144,6 +154,15 @@ MOVE 0 Takumi [6,15]
 ENUN
 STAL 10
 CALL CreateCliff
+CAM1 Riev
+CUMO Riev
+STAL 40
+CURE
+Text(PlaceholderText)
+CAM1 [28,5]
+LOAD1 0 EnemyUnits2
+ENUN
+CAM1 Eirika
 Text(PlaceholderText)
 GOTO 2
 LABEL 1
