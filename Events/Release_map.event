@@ -48,7 +48,7 @@ END_MAIN
 
 Units1:
 UNIT Eirika  EirikaLord 0x1 Level(12,Ally,0)     [24,12] 0b 0x0 1 REDA24R13 [Rapier,Vulnerary] NoAI
-UNIT LArachel  Troubadour 0x1 Level(15,Ally,0)  [24,12] 0b 0x0 1 REDA23R14 [Mend,KnightCrest] NoAI
+UNIT LArachel  Troubadour 0x1 Level(15,Ally,0)  [24,12] 0b 0x0 1 REDA23R14 [Mend,GuidingRing] NoAI
 UNIT Tana  PegasusKnight 0x1 Level(15,Ally,0)    [24,12] 0b 0x0 1 REDA26R13 [HeavySpear] NoAI
 UNIT Dozla  Berserker 0x1 Level(1,Ally,0) [24,12] 0b 0x0 1 REDA24R14 [BattleAxe,Elixir] NoAI
 UNIT
@@ -175,6 +175,13 @@ CreateBridges:
 CAM1 [10,5]
 VeinActivation
 TILECHANGE 1
+CAM1 [19,16]
+LOAD1 0 Units4 //Palla & Catria
+ENUN
+CUMO Palla
+STAL 40
+CURE
+Text(PlaceholderText)
 NoFade
 ENDA
 
