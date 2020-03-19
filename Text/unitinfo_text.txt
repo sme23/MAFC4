@@ -408,4 +408,60 @@ Morph[X]
 A creature given life by[N]
 supernatural powers.[X]
 
+## GharnefBattleQuote
+[X]
+
+## NergalBattleQuote
+[X]
+
+## RievBattleQuote
+[X]
+
+## TakumiBattleQuote
+[X]
+
+## GharnefDeathQuote
+[X]
+
+## NergalDeathQuote
+[X]
+
+## RievDeathQuote
+[X]
+
+## TakumiDeathQuote
+[X]
+
+## EdelgardDeathQuote
+[X]
+
+## LinhardtDeathQuote
+[X]
+
+## EirikaDeathQuote
+[X]
+
+## LArachelDeathQuote
+[X]
+
+## TanaDeathQuote
+[X]
+
+## DozlaDeathQuote
+[X]
+
+## PallaDeathQuote
+[X]
+
+## CatriaDeathQuote
+[X]
+
+## AresDeathQuote
+[X]
+
+## LeneDeathQuote
+[X]
+
+## YuriDeathQuote
+[X]
 

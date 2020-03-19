@@ -46,6 +46,7 @@ END_MAIN
 Tutorial:
 END_MAIN
 
+ALIGN 4
 Units1:
 UNIT Eirika  EirikaLord 0x1 Level(12,Ally,0)     [24,12] 0b 0x0 1 REDA24R13 [Rapier,Vulnerary] NoAI
 UNIT LArachel  Troubadour 0x1 Level(15,Ally,0)  [24,12] 0b 0x0 1 REDA23R14 [Mend,GuidingRing] NoAI
@@ -53,25 +54,30 @@ UNIT Tana  PegasusKnight 0x1 Level(15,Ally,0)    [24,12] 0b 0x0 1 REDA26R13 [Hea
 UNIT Dozla  Berserker 0x1 Level(1,Ally,0) [24,12] 0b 0x0 1 REDA24R14 [BattleAxe,Elixir] NoAI
 UNIT
 
+ALIGN 4
 Units2:
 UNIT Edelgard  EdelgardLord 0x1 Level(10,Ally,0)   [28,0] 0b 0x0 1 REDA28R1 [Aymr,Elixir] NoAI
 UNIT Linhardt  Mage 0x1 Level(11,Ally,0)  [28,0] 0b 0x0 1 REDA27R0 [Elfire,GuidingRing] NoAI
 UNIT
 
+ALIGN 4
 Units3:
 UNIT Ares  Cavalier 0x1 Level(10,Ally,0) [8,9] 0b 0x0 0x0 0x0 [Mystletainn] NoAI
 UNIT Lene  Dancer 0x1 Level(12,Ally,0)    [9,10] 0b 0x0 0x0 0x0 [SleepSword,NinissGrace] NoAI
 UNIT
 
+ALIGN 4
 Units4:
 UNIT Palla  WyvernKnight 0x1 Level(3,Ally,0)   [19,16] 0b 0x0 0x0 0x0 [Dragonspear] NoAI
 UNIT Catria  Falcoknight 0x1 Level(1,Ally,0)     [20,16] 0b 0x0 0x0 0x0 [KillerLance] NoAI
 UNIT
 
+ALIGN 4
 Units5:
 UNIT Yuri  Rogue 0x1 Level(2,Ally,0)  [3,0] 0b 0x0 0x0 0x0 [IronSword] NoAI
 UNIT
 
+ALIGN 4
 EnemyBosses:
 UNIT Gharnef  Druid 0x1 Level(5,Enemy,0)   [16,7] 0b 0x0 0x0 0x0 [Imhullu] NeverMoveAI
 UNIT Nergal  Druid 0x1 Level(5,Enemy,0)    [1,5] 0b 0x0 0x0 0x0 [Ereshkigal] NeverMoveAI
@@ -79,14 +85,16 @@ UNIT Riev  Bishop 0x1 Level(5,Enemy,0) [9,4] 0b 0x0 0x0 0x0 [Ivaldi] NeverMoveAI
 UNIT Takumi  Sniper 0x1 Level(5,Enemy,0)  [4,14] 0b 0x0 0x0 0x0 [FujinYumi] NeverMoveAI
 UNIT
 
+ALIGN 4
 EnemyUnits1:
-UNIT Dolhr Fighter Gharnef Level(12,Enemy,1) [19,5] 0 0 1 REDA17R6 [SteelAxe] AttackInRangeAI
-UNIT Dolhr Cavalier_F Gharnef Level(12,Enemy,1) [19,5] 0 0 1 REDA15R8 [IronLance] AttackInRangeAI
-UNIT Dolhr Mage Gharnef Level(12,Enemy,1) [19,5] 0 0 1 REDA16R9 [Thunder] AttackInRangeAI
-UNIT Dolhr Shaman Gharnef Level(12,Enemy,1) [19,5] 2 0 1 REDA18R7 [Flux,Elixir] AttackInRangeAI
-UNIT Dolhr Knight Gharnef Level(12,Enemy,1) [19,5] 0 0 1 REDA14R7 [SteelLance] NeverMoveAI
+UNIT Dolhr Fighter Gharnef Level(12,Enemy,1) [17,6] 0 0 0 REDA17R6 [SteelAxe] AttackInRangeAI
+UNIT Dolhr Cavalier_F Gharnef Level(12,Enemy,1) [15,8] 0 0 0 REDA15R8 [IronLance] AttackInRangeAI
+UNIT Dolhr Mage Gharnef Level(12,Enemy,1) [16,9] 0 0 0 REDA16R9 [Thunder] AttackInRangeAI
+UNIT Dolhr Shaman Gharnef Level(12,Enemy,1) [18,7] 2 0 0 REDA18R7 [Flux,Elixir] AttackInRangeAI
+UNIT Dolhr Knight Gharnef Level(12,Enemy,1) [14,7] 0 0 0 REDA14R7 [SteelLance] NeverMoveAI
 UNIT
 
+ALIGN 4
 EnemyUnits2:
 UNIT Remnant Cavalier Riev Level(11,Enemy,1) [28,7] 0 0 1 REDA27R10 [IronLance] AttackInRangeAI
 UNIT Remnant Mage_F Riev Level(12,Enemy,1) [28,7] 0 0 1 REDA27R5 [Thunder] AttackInRangeAI
@@ -110,11 +118,27 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-LOAD1 0x0 Units1 
+SetBackground(Castle_Hall)
+Text(PlaceholderText)
+EndConvo
+FADI 10
+LOAD1 1 EnemyBosses
 ENUN
-LOAD1 0x0 EnemyBosses
+CAM1 [24,12]
+FADU 10
+LOAD1 1 Units1 
 ENUN
-LOAD1 0x0 EnemyUnits1
+CUMO Eirika
+STAL 40
+CURE
+Text(PlaceholderText)
+CAM1 Takumi
+CUMO Takumi
+STAL 40
+CURE
+Text(PlaceholderText)
+LOAD1 1 EnemyUnits1
+CAM1 Eirika
 NoFade
 ENDA
 

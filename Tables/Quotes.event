@@ -1,0 +1,54 @@
+#define AlwaysDeathQuote(arg000,arg001,arg002) "BYTE arg000 0x0 0xff 0xff arg001 0x0 ;SHORT arg002 ;WORD 0x0 "
+#define ChapterDeathQuote(arg000,arg001,arg002,arg003) "BYTE arg000 0x0 0xff arg001 arg002 0x0 ;SHORT arg003 ;WORD 0x0 "
+#define EndDeathQuote "BYTE 0xff 0xff 0x0 0x0 0x0 0x0 ;SHORT 0x0 ;WORD 0x0 "
+#define BattleQuote(arg000,arg001,arg002,arg003) "BYTE arg000 0x0 arg001 0x0 arg002 0x0 0x1 0x0 ;SHORT arg003 ;BYTE 0x0 0x0 0x0 0x0 0x0 0x0 "
+#define BattleQuoteFlag(flag,arg000,arg001,arg002,arg003) "BYTE arg000 0x0 arg001 0x0 arg002 0x0 flag 0x0 ;SHORT arg003 ;BYTE 0x0 0x0 0x0 0x0 0x0 0x0 "
+#define TwoWayBattleQuote(arg000,arg001,arg002,arg003) "BattleQuote(arg000,arg001,arg002,arg003);BattleQuote(arg001,arg000,arg002,arg003)"
+#define TwoWayBattleQuoteFlag(flag,arg000,arg001,arg002,arg003) "BattleQuoteFlag(flag,arg000,arg001,arg002,arg003);BattleQuoteFlag(flag,arg001,arg000,arg002,arg003)"
+#define EndQuote "BYTE 0xff 0xff"
+
+//TwoWayBattleQuote(eventID,char1,char2,textID)
+//BattleQuote(eventID,char1,char2,textID)
+
+ALIGN 4
+BattleQuoteTable:
+TwoWayBattleQuote(0x28,Gharnef,0,GharnefBattleQuote)
+TwoWayBattleQuote(0x27,Riev,0,RievBattleQuote)
+TwoWayBattleQuote(0x26,Nergal,0,NergalBattleQuote)
+TwoWayBattleQuote(0x25,Takumi,0,TakumiBattleQuote)
+EndQuote
+
+PUSH
+ORG $846AC
+POIN BattleQuoteTable
+POP
+
+ALIGN 4
+DeathQuoteTable:
+//ChapterSpecificDeathQuotes
+//ChapterDeathQuote(Character,Chapter,Flag,TextID)
+ChapterDeathQuote(Gharnef,0,0x24,GharnefDeathQuote)
+ChapterDeathQuote(Nergal,0,0x23,NergalDeathQuote)
+ChapterDeathQuote(Riev,0,0x22,RievDeathQuote)
+ChapterDeathQuote(Takumi,0,0x21,TakumiDeathQuote)
+
+//AlwaysDeathQuotes
+//AlwaysDeathQuote(Character,Flag,TextID)
+AlwaysDeathQuote(Edelgard,0,EdelgardDeathQuote)
+AlwaysDeathQuote(Linhardt,0,LinhardtDeathQuote)
+AlwaysDeathQuote(Eirika,0,EirikaDeathQuote)
+AlwaysDeathQuote(LArachel,0,LArachelDeathQuote)
+AlwaysDeathQuote(Tana,0,TanaDeathQuote)
+AlwaysDeathQuote(Dozla,0,DozlaDeathQuote)
+AlwaysDeathQuote(Palla,0,PallaDeathQuote)
+AlwaysDeathQuote(Catria,0,CatriaDeathQuote)
+AlwaysDeathQuote(Ares,0,AresDeathQuote)
+AlwaysDeathQuote(Lene,0,LeneDeathQuote)
+AlwaysDeathQuote(Yuri,0,YuriDeathQuote)
+EndQuote
+
+PUSH
+ORG $8472C
+POIN DeathQuoteTable
+POP
+
